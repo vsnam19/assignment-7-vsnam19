@@ -5,9 +5,12 @@
 #include <linux/module.h>
 MODULE_LICENSE("Dual BSD/GPL");
 
+#define DRIVER_AUTHOR "vsnam19"
+
 static int hello_init(void)
 {
 	printk(KERN_ALERT "Hello, world\n");
+    printk(KERN_ALERT "Make by %s\n", DRIVER_AUTHOR);
 	return 0;
 }
 
